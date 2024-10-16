@@ -24,6 +24,12 @@ li a:hover{
     cursor: pointer;
 }
 
+img {
+    width: 21rem;
+    height: 10rem;
+    object-fit: cover;
+  }
+
 .content{
     padding: .5rem 1rem;
     position: relative;
