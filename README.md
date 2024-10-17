@@ -29,3 +29,16 @@ This project is licensed under the MIT License.
 Enjoy exploring and happy eating! 🍕🥗🍰
 
 ## Delicious Food
+
+### Home Page
+
+<img width="946" alt="home" src="https://github.com/user-attachments/assets/0dcd87d0-9d62-455b-9198-c05b69a1603b">
+
+### Food View
+
+<img width="683" alt="food view" src="https://github.com/user-attachments/assets/2aab09f3-704d-480d-9c96-3975f9d58e03">
+
+### Cart
+
+<img width="952" alt="cart" src="https://github.com/user-attachments/assets/7ddd83cc-821b-42e9-b2b6-2debf1fb02ab">
+
