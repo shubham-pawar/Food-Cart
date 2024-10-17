@@ -12,20 +12,18 @@ export class FoodService {
     return this.getAll().find(food => food.id == id)!;
   }
 
-  getAllFoodsBySearchTerm(searchTerm:String) :Food[]{
+  getAllFoodsBySearchTerm(searchTerm:string) :Food[]{
     return this.getAll().filter(food =>
       food.name.toLowerCase().includes(searchTerm.toLowerCase()));
   }
 
   getAllTags(): Tag[]{
     return [
-      { name: 'All', count: 14 },
-      { name: 'FastFood', count: 4 },
-      { name: 'Pizza', count: 2 },
-      { name: 'Lunch', count: 3 },
-      { name: 'SlowFood', count: 2 },
-      { name: 'Hamburger', count: 1 },
-      { name: 'Fry', count: 1 },
+      { name: 'All', count: 13 },
+      { name: 'FastFood', count: 2 },
+      { name: 'Lunch', count: 4 },
+      { name: 'SlowFood', count: 4 },
+      { name: 'Fry', count: 2 },
       { name: 'Soup', count: 1 },
     ];
   }
@@ -45,10 +43,10 @@ export class FoodService {
         cookTime: '10-20',
         price: 16,
         favorite: false,
-        origins: ['italy'],
+        origins: ['india'],
         stars: 4.5,
-        imageUrl: './assets/images/foods/biryani.jpg',
-        tags: ['FastFood', 'Pizza', 'Lunch'],
+        imageUrl: '../assets/images/foods/biryani.jpg',
+        tags: ['SlowFood', 'Lunch'],
       },
       {
         id: 2,
@@ -56,9 +54,9 @@ export class FoodService {
         price: 20,
         cookTime: '20-30',
         favorite: true,
-        origins: ['persia', 'middle east', 'china'],
+        origins: ['persia', 'middle east', 'india'],
         stars: 4.7,
-        imageUrl: './assets/images/foods/butterchicken.jpg',
+        imageUrl: '../assets/images/foods/butterchicken.jpg',
         tags: ['SlowFood', 'Lunch'],
       },
       {
@@ -67,10 +65,10 @@ export class FoodService {
         price: 15,
         cookTime: '10-15',
         favorite: false,
-        origins: ['germany', 'us'],
+        origins: ['srilanka', 'india'],
         stars: 3.5,
-        imageUrl:  './assets/images/foods/chanamasala.jpg',
-        tags: ['FastFood', 'Hamburger'],
+        imageUrl:  '../assets/images/foods/chanamasala.jpg',
+        tags: ['Fry', 'SlowFood', 'Lunch'],
       },
       {
         id: 4,
@@ -78,9 +76,9 @@ export class FoodService {
         price: 12,
         cookTime: '15-20',
         favorite: true,
-        origins: ['belgium', 'france'],
+        origins: ['india', 'asia'],
         stars: 3.3,
-        imageUrl: './assets/images/foods/dahivada.jpg',
+        imageUrl: '../assets/images/foods/dahivada.jpg',
         tags: ['FastFood', 'Fry'],
       },
       {
@@ -91,7 +89,7 @@ export class FoodService {
         favorite: false,
         origins: ['india', 'asia'],
         stars: 3.0,
-        imageUrl: './assets/images/foods/noodles.jpg',
+        imageUrl: '../assets/images/foods/noodles.jpg',
         tags: ['SlowFood', 'Soup'],
       },
       {
@@ -100,10 +98,10 @@ export class FoodService {
         price: 9,
         cookTime: '40-50',
         favorite: false,
-        origins: ['italy'],
+        origins: ['india'],
         stars: 4.0,
-        imageUrl: './assets/images/foods/panipuri.jpg',
-        tags: ['FastFood', 'Pizza', 'Lunch'],
+        imageUrl: '../assets/images/foods/panipuri.jpg',
+        tags: ['FastFood', 'Lunch'],
       },
     ]
   }

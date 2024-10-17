@@ -5,11 +5,12 @@ import { Food } from '../shared/models/Food';
 import { CommonModule } from '@angular/common';
 import { TagsComponent } from "../tags/tags.component";
 import { CartService } from '../services/cart/cart.service';
-import { Router } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
+import { NotFoundComponent } from "../not-found/not-found.component";
 @Component({
   selector: 'app-food-page',
   standalone: true,
-  imports: [CommonModule, TagsComponent],
+  imports: [CommonModule, RouterModule, TagsComponent, NotFoundComponent],
   templateUrl: './food-page.component.html',
   styleUrl: './food-page.component.css'
 })

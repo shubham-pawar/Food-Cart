@@ -7,12 +7,12 @@ import { ActivatedRoute } from '@angular/router';
 import { SearchComponent } from '../search/search.component';
 import { TagsComponent } from "../tags/tags.component";
 import { RouterLink } from '@angular/router';
-import { Router } from 'express';
+import { NotFoundComponent } from "../not-found/not-found.component";
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [NgFor, CommonModule, SearchComponent, TagsComponent, RouterLink],
+  imports: [NgFor, CommonModule, SearchComponent, TagsComponent, RouterLink, NotFoundComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })

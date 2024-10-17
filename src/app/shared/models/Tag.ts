@@ -1,4 +1,4 @@
 export class Tag{
-    name!:String;
+    name!:string;
     count!:number;
 }

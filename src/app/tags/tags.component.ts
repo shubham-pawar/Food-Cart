@@ -14,7 +14,7 @@ import { RouterLink } from '@angular/router';
 export class TagsComponent implements OnInit{
 
   @Input()
-  foodPageTags?:String[];
+  foodPageTags?:string[];
   
   @Input()
   JustifyContent:string = 'center'
